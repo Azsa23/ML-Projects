@@ -1,2 +1,14 @@
-Decision Tree Overfitting ExperimentA simple experiment demonstrating the concept of Overfitting in machine learning models using a Decision Tree classifier (DecisionTreeClassifier) via scikit-learn.  📌 Project OverviewThe goal of this code is to monitor how a decision tree model's performance changes as the tree depth (max_depth) increases, and how an excessively high depth leads to memorizing training data rather than generalizing (Overfitting) while test performance fluctuates or plateaus.  🛠️ Technologies UsedPython  Scikit-Learn (for data generation, splitting, and model building)  Jupyter Notebook  🚀 How to RunEnsure you have the required libraries installed:Bashpip install numpy scikit-learn matplotlib
-Open the Jupyter Notebook and run the cells step-by-step.📊 Experimental InsightsAt low depth (e.g., 2 or 3): Training and test accuracies are balanced and reasonable.  At high depth (15 to 20): Training accuracy hits 100% while test accuracy begins to fluctuate or plateau, which is a clear sign of Overfitting.
+
+This project demonstrates the fundamental concept of overfitting in machine learning models through a hands-on experiment using a Decision Tree classifier and scikit-learn.
+
+## Project Overview
+
+The primary objective of this code is to monitor how the performance of a decision tree model evolves as the tree depth (`max_depth`) increases from 1 to 20. By synthetically generating a classification dataset using `make_classification` and splitting it into training and testing sets, the experiment highlights a crucial machine learning phenomenon. As the tree becomes overly complex with a high depth, it begins to memorize the training data rather than learning underlying patterns—achieving up to 100% training accuracy—while test performance fluctuates or plateaus, which is a classic indicator of overfitting.
+
+## Technologies Used
+
+The implementation relies on Python alongside the scikit-learn library for data generation, dataset splitting, and model training, all documented within an interactive Jupyter Notebook environment.
+
+## How to Run
+
+To run this experiment locally, ensure you have the necessary data science libraries installed by running `pip install numpy scikit-learn matplotlib`. Once installed, open the Jupyter Notebook and execute the cells sequentially to observe the training and testing accuracy metrics across different tree depths.
